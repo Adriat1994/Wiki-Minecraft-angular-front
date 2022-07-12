@@ -8,7 +8,7 @@ Primer proyecto creado con Angular, perfecto para practicar la estructura de un 
 También se definen todos los modelos utilizados mediante typeScript.
 
   ## URL para ver el resultado
-Para ver el proyecto en directo puedes verlo aquí (https://adriat1994.github.io/Wiki-Minecraft-angular-front/)
+Para ver el proyecto en directo puedes verlo aquí (https://wiki-minecraft-ats.netlify.app/)
 
 
   ## Autor ✒️
