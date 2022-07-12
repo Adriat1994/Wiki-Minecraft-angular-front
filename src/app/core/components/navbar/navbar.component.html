@@ -1,0 +1,15 @@
+<div class="todo">
+    <div class="imagen">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC-Hh7dquR9E7vFHcXbT45FPd8mNdDutd6hg&usqp=CAU">
+        
+    </div>
+    <br>
+    <br>
+    <ul>
+        <li *ngFor="let item of menuItem"> 
+            <a style="text-decoration: none" [routerLink]="[item.url]">
+                {{item.label}}
+            </a>
+        </li>
+    </ul>
+</div>

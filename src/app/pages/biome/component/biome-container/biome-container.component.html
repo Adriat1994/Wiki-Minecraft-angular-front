@@ -1,0 +1,25 @@
+
+<h1>Know our most remote places!</h1>
+
+
+<div *ngIf="biomeList" class="all_biomes">
+
+   
+   
+    <div *ngFor="let biome of biomeList" class="biome_box">
+
+      <h4>Id: {{ biome._id }}</h4> 
+      <h4>Name: {{ biome.name }}</h4> 
+      
+
+      <img [src]="biome.image" [alt]="biome.name">
+
+      <h4>Features: {{ biome.features }}</h4>
+      <h4>Description: {{ biome.description }}</h4>
+     
+
+      <button (click)="deleteBiomeById(biome._id)">Delete {{biome.name}}</button>
+
+    </div>
+    
+</div>

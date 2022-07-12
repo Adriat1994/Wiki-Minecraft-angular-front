@@ -1,0 +1,123 @@
+
+
+
+
+<h1>Do you think something is missing? Let us know!</h1>
+
+
+
+<select  [(ngModel)]="opcionSeleccionado" (change)="cambiarOpcion()">
+    <option value="item">Item</option>
+    <option value="animal">Animal</option>
+    <option value="biome">Bioma</option>
+</select>
+
+<br>
+<br>
+
+<form [formGroup]="ItemForm" (ngSubmit)='createNewItem()' [hidden]="opcionSeleccionado != 'item'">
+    
+  
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name">
+  
+    <br>
+    <br>
+
+    <label for="description">Description: </label>
+    <input id="description" type="text" formControlName="description">
+
+    <br>
+    <br>
+  
+    <label for="obtaining">Obtaining: </label>
+    <input id="obtaining" type="text" formControlName="obtaining">
+
+    <br>
+    <br>
+  
+    <label for="stack">Stack: </label>
+    <input id="stack" type="text" formControlName="stack">
+
+    <br>
+    <br>
+
+    <label for="image">Image URL: </label>
+    <input id="image" type="text" formControlName="image">
+
+    <br>
+    <br>
+
+    <button type="submit">Send</button> 
+
+</form>
+
+<form [formGroup]="AnimalForm" (ngSubmit)='createNewAnimal()' [hidden]="opcionSeleccionado != 'animal'">
+    
+  
+  <label for="name">Name: </label>
+  <input id="name" type="text" formControlName="name">
+
+  <br>
+  <br>
+
+  <label for="description">Description: </label>
+  <input id="description" type="text" formControlName="description">
+
+  <br>
+  <br>
+
+  <label for="spawning">Spawning: </label>
+  <input id="spawning" type="text" formControlName="spawning">
+
+  <br>
+  <br>
+
+  <label for="behavior">Behavior: </label>
+  <input id="behavior" type="text" formControlName="behavior">
+
+  <br>
+  <br>
+
+  <label for="image">Image URL: </label>
+  <input id="image" type="text" formControlName="image">
+
+  <br>
+  <br>
+
+  <button type="submit">Send</button> 
+
+</form>
+
+
+<form [formGroup]="BiomeForm" (ngSubmit)='createNewBiome()' [hidden]="opcionSeleccionado != 'biome'">
+    
+  
+  <label for="name">Name: </label>
+  <input id="name" type="text" formControlName="name">
+
+  <br>
+  <br>
+
+  <label for="features">Features: </label>
+  <input id="features" type="text" formControlName="features">
+
+  <br>
+  <br>
+
+  <label for="description">Description: </label>
+  <input id="description" type="text" formControlName="description">
+
+  <br>
+  <br>
+
+  <label for="image">Image URL: </label>
+  <input id="image" type="text" formControlName="image">
+
+  <br>
+  <br>
+
+  <button type="submit" >Send</button> 
+
+</form>
+
